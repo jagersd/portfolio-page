@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="/assets/logos/fontawesome.css">
+    <link rel="stylesheet" href="/assets/logos/brands.css">
+    <link rel="stylesheet" href="/assets/logos/solid.css">
+    <link rel="stylesheet" href="/assets/logos/font-mfizz.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+    <title>Portfolio</title>
+</head>
+<body>
+
+<div id="app">
+    
+    <!--Menu element-->
+    <ul id="menu-list">
+        <li class="menu-item" v-if="activeElement != 'intro'" @click="activeElement='intro'">HOME</li>
+        <li class="menu-item" v-if="activeElement != 'aboutme'" @click="activeElement='aboutme'">ABOUT ME</li>
+        <li class="menu-item" v-if="activeElement != 'projects'" @click="activeElement='projects'">PROJECTS</li>
+        <li class="menu-item"><a href="https://www.linkedin.com/in/stefan-de-jager-1b1b8525/" target="about_blank"><i class="fab fa-linkedin"></i></a></li>
+        <li class="menu-item"><a href="https://github.com/jagersd" target="about_blank"><i class="fab fa-github"></i></a></li>
+    </ul>
+
+    <!--Intro element-->
+    <transition name="fade">
+    <div class="intro-section" v-show="activeElement == 'intro'">
+        <div id="slogan">
+            <h2>Hello, My name is <span class="clickable" @click="activeElement='aboutme'">Stefan de Jager</span></h2>
+            <h2>full stack web tinkerer</h2>
+        </div>
+        <div class="tech-stack">
+            <ul id="server-list">
+                <li class="tech-list-server">infra</li>
+                <li class="tech-list-server"><i class="icon-ubuntu" title="ubuntu-server"></i></li>
+                <li class="tech-list-server"><i class="icon-nginx" title="nginx"></i></li>
+            </ul>
+            
+            <ul id="backend-list">
+                <li class="tech-list-backend">back end</li>
+                <li class="tech-list-backend"><i class="icon-php-alt" title="php"></i></li>
+                <li class="tech-list-backend"><i class="icon-laravel" title="laravel"></i></li>
+                <li class="tech-list-backend"><i class="icon-mysql-alt" title="MySQL"></i></li>
+            </ul>
+
+            <ul id="fronend-list">
+                <li class="tech-list-frontend">front end</li>
+                <li class="tech-list-frontend"><i class="icon-html5" title="html"></i></li>
+                <li class="tech-list-frontend"><i class="icon-css3-alt" title="css"></i></li>
+                <li class="tech-list-frontend"><i class="icon-javascript-alt" title="JavaScript"></i></li>
+                <li class="tech-list-frontend"><i class="icon-bootstrap" title="bootstrap"></i></li>
+                <li class="tech-list-frontend"><i class="fab fa-vuejs" title="VueJS"></i></li>
+            </ul>
+        </div>
+    </div>
+    </transition>
+
+    <!--About me Segment-->
+    <transition name="fade">
+    <div class="about-me" v-show="activeElement == 'aboutme'">
+        <h2 id="about-me-slogan">Thank you for visiting my Portfolio!</h2>
+        <div id="about-me-content">
+            <p>This page serves as a repository and <span class="clickable" @click="activeElement='projects'">display</span> of my journey through everything webtechnology which started during the winter of 2018.<br>
+                Each project on this website has been created for self-study goals and has not been the result of monitized assignments.</p>
+            <p>As from January 2020 I have been lucky enough to land a spot at a software company which provides me with the opportunity to gain a lot of knowlegde by developing
+                inhouse tools and contributing to server infrastructure maintainance. For obvious reasons, these will not appear in my personal <a href="https://github.com/jagersd"> github</a> repositories.</p>
+            <p>In the last year I have particularly enjoyed both consuming as well as setting up API's allowing the and user with a smooth and simple experience. As well as 
+                getting to know my way around different ways of setting up server infrastructure on Linux. 
+            </p>    
+
+            <p>Because I have used a lot of open source tools and packages, it is only fair to invite you to use / copy whatever you can find.</p>
+        </div>
+    </div>
+    </transition>
+
+    <!--About me Segment-->
+    <div class="projects" v-show="activeElement == 'projects'"> 
+        <ul id="project-list">
+            <transition name="bounce">
+                <li class="project-list-item" id="project-1" v-if="activeElement == 'projects'" :class="{'active-project-index': activeProject === 'solento'}" @click="activeProject = 'solento'">Solento</li>
+            </transition>
+            <transition name="bounce">
+                <li class="project-list-item" id="project-2" v-if="activeElement == 'projects'" :class="{'active-project-index': activeProject === 'quiz'}" @click="activeProject = 'quiz'">Quiz</li>
+            </transition>
+            <transition name="bounce">
+                <li class="project-list-item" id="project-3" v-if="activeElement == 'projects'" :class="{'active-project-index': activeProject === 'writers'}" @click="activeProject = 'writers'">Writers Showcase</li>
+            </transition>
+            <transition name="bounce">
+                <li class="project-list-item" id="project-4" v-if="activeElement == 'projects'" :class="{'active-project-index': activeProject === 'gameshowcase'}" @click="activeProject = 'gameshowcase'">Game Showcase</li>
+            </transition>
+            <transition name="bounce">
+                <li class="project-list-item" id="project-5" v-if="activeElement == 'projects'" :class="{'active-project-index': activeProject === 'webshop'}" @click="activeProject = 'webshop'">Webshop</li>
+            </transition>
+        </ul>
+        <div class="project-overview">
+            <div v-for="project in projects">
+                <transition name="fade">
+                <div class="project-details" v-if="activeProject==project.slug">
+                    <div id="project-date"><i class="fas fa-calendar-alt"></i>
+                        {{project.date}}
+                    </div>
+                    <div id="project-desc"><i class="fas fa-bullseye"></i>
+                        <p>{{project.desc}}</p>
+                    </div>
+                    <ul id="project-tech-list"><i class="fas fa-tools"></i>
+                        <li v-for="tech in project.technologies" class="project-tech">{{tech}}</li>
+                    </ul>
+                    <a :href="project.url" id="project-url" target="about_blank">VISIT</a>
+                </div>
+                </transition>
+            </div>
+        </div>
+    </div>
+    <div id="bigBox">
+        <div id="box"></div>
+        <div id="box2"></div>
+    </div>
+
+</div>
+
+
+
+<footer>
+    
+</footer>
+
+<script src="/assets/main.js"></script>
+</body>
+</html>
