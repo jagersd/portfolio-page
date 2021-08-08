@@ -44,8 +44,10 @@ ul{
 /*MENU*/
 #menu-list{
     position: fixed;
-    top:10px;
+    top:0;
     right: 20px;
+    z-index: 10;
+    padding-top: 10px;
 }   
 
 .menu-item{
@@ -218,17 +220,20 @@ i{
 }
 
 @media only screen and (max-width: 600px) {
+
     .projects{
         top:10vh;
+        position: relative;
     }
     
     .project-details{
+        position: relative;
         left: 5%;
         right: 5%;
         border:1px solid rgba(255,255,255,0.5);
         border-radius: 5px;
         padding: 10px;
-        padding-bottom: 30px;
+        padding-bottom: 10vh;
     }
 }
 
@@ -247,6 +252,7 @@ footer{
 
 @media only screen and (max-width: 600px) {
     footer{
+        margin-top: 10vh;
         min-height: 10vh;
     }
 }
