@@ -1,13 +1,22 @@
 const projects = {
     "data": [
+      // {
+      //   "slug":"gameshowcase",
+      //   "date":"Dec-2019",
+      //   "desc":"Getting to know bootstrap and working with 3rd party packages",
+      //   "name":"Airsim",
+      //   "technologies":["html","css/bootstrap","php","flarum"],
+      //   "todo":"Ook nog heel erg veel",
+      //   "url":"https://stefandejager.nl/airsim"
+      // },
       {
-        "slug":"gameshowcase",
-        "date":"Dec-2019",
-        "desc":"Getting to know bootstrap and working with 3rd party packages",
-        "name":"Airsim",
-        "technologies":["html","css/bootstrap","php","flarum"],
-        "todo":"Ook nog heel erg veel",
-        "url":"https://stefandejager.nl/airsim"
+        "slug":"nogwat",
+        "date":"Sep-2021 - .....",
+        "desc":"Mobile app through Ionic framework. Decoupled backend through Laravel API using Vue3 with Axios for the UI. Group/family grocery list and recipe sharing tool",
+        "name":"Nogwat Mobile App",
+        "technologies":["Ionic 6","Vue 3","Laravel 8","MySql"],
+        "todo":"setup test environment for open beta release",
+        "url":"https://github.com/jagersd/nogwat"
       },
       {
         "slug":"webshop",
@@ -54,7 +63,7 @@ var app = new Vue({
     data: {
       message: 'Hello Vue!',
       activeElement: 'intro',
-      activeProject: '',
+      activeProject: 'nogwat',
       projects: projects.data
     },
   })

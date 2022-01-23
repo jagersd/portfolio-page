@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/style.css">
     <link rel="stylesheet" href="/assets/logos/fontawesome.css">
     <link rel="stylesheet" href="/assets/logos/brands.css">
@@ -32,20 +31,20 @@
     <transition name="fade">
     <div class="intro-section" v-show="activeElement == 'intro'">
         <div id="slogan">
-            <h2>Hello, My name is <span class="clickable" @click="activeElement='aboutme'">Stefan de Jager</span></h2>
-            <h2>full stack web tinkerer</h2>
+            <h1>Hello, My name is <span class="clickable" @click="activeElement='aboutme'">Stefan de Jager</span></h1>
+            <h3>full stack web tinkering</h3>
         </div>
         <div class="tech-stack">
             <ul id="server-list">
                 <li class="tech-list-server">infra</li>
-                <li class="tech-list-server"><i class="icon-ubuntu" title="ubuntu-server"></i></li>
+                <li class="tech-list-server"><i class="fab fa-ubuntu" title="ubuntu-server"></i></li>
                 <li class="tech-list-server"><i class="icon-nginx" title="nginx"></i></li>
             </ul>
             
             <ul id="backend-list">
                 <li class="tech-list-backend">back end</li>
                 <li class="tech-list-backend"><i class="icon-php-alt" title="php"></i></li>
-                <li class="tech-list-backend"><i class="icon-laravel" title="laravel"></i></li>
+                <li class="tech-list-backend"><i class="fab fa-laravel" title="laravel"></i></li>
                 <li class="tech-list-backend"><i class="icon-mysql-alt" title="MySQL"></i></li>
             </ul>
 
@@ -54,8 +53,13 @@
                 <li class="tech-list-frontend"><i class="icon-html5" title="html"></i></li>
                 <li class="tech-list-frontend"><i class="icon-css3-alt" title="css"></i></li>
                 <li class="tech-list-frontend"><i class="icon-javascript-alt" title="JavaScript"></i></li>
-                <li class="tech-list-frontend"><i class="icon-bootstrap" title="bootstrap"></i></li>
+                <li class="tech-list-frontend"><i class="fab fa-bootstrap" title="bootstrap"></i></li>
                 <li class="tech-list-frontend"><i class="fab fa-vuejs" title="VueJS"></i></li>
+            </ul>
+            <ul id="other-list">
+                <li class="tech-list-other">other</li>
+                <li class="tech-list-other"><i class="icon-docker" title="docker"></i></li>
+                <li class="tech-list-other"><i class="fab fa-git-alt" title="git"></i></li>
             </ul>
         </div>
     </div>
@@ -92,7 +96,7 @@
                 <li class="project-list-item" id="project-3" v-if="activeElement == 'projects'" :class="{'active-project-index': activeProject === 'writers'}" @click="activeProject = 'writers'">Writers Showcase</li>
             </transition>
             <transition name="bounce">
-                <li class="project-list-item" id="project-4" v-if="activeElement == 'projects'" :class="{'active-project-index': activeProject === 'gameshowcase'}" @click="activeProject = 'gameshowcase'">Game Showcase</li>
+                <li class="project-list-item" id="project-4" v-if="activeElement == 'projects'" :class="{'active-project-index': activeProject === 'nogwat'}" @click="activeProject = 'nogwat'">Nogwat App</li>
             </transition>
             <transition name="bounce">
                 <li class="project-list-item" id="project-5" v-if="activeElement == 'projects'" :class="{'active-project-index': activeProject === 'webshop'}" @click="activeProject = 'webshop'">Webshop</li>

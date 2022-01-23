@@ -1,28 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap');
 
-/*
-colors:
-darkbackground = #061824
-default text = #D8DEE9
-accent text = #88C0D0
-links = #D08770
-
-*/
-
+:root{
+    --main-dark: #061824;
+    --main-light: #D8DEE9;
+    --light-accent: #88C0D0;
+    --bright-accent: #D08770;
+    --yellow-accent: #EBCB8B;
+}
 
 *{
-    background-color: #061824;
-    color:#D8DEE9;
+    padding: 0;
+    margin:0;
+    background-color: var(--main-dark);
+    color:var(--main-light);
     font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
     list-style: none;
 }
 
 a{
-    color:#88C0D0;
+    color:var(--light-accent);
 }
 
 a:hover{
-    color:#D08770;
+    color:var(--bright-accent);
     transition: 0.5s;
 }
 
@@ -31,13 +32,22 @@ ul{
 }
 
 .clickable{
-    color:#88C0D0;
+    color: var(--light-accent);
 }
 
 .clickable:hover{
     transition: 0.5s;
-    color:#D08770;
+    color:var(--bright-accent);
     cursor: pointer;
+}
+
+h2{
+    padding-bottom: 2vh;
+}
+
+p{
+    padding-bottom: 1vh;
+    line-height: 1.6;
 }
 
 
@@ -54,17 +64,17 @@ ul{
     display: block;
     float: left;
     margin-left:10px;
-    color: #88C0D0;
+    color: var(--light-accent);
 }
 
 .menu-item:hover{
-    color: #D08770;
+    color: var(--bright-accent);
     cursor: pointer;
     transition: 0.5s;
 }
 
 .menu-item i:hover{
-    color: #D08770;
+    color: var(--bright-accent);
     cursor: pointer;
     transition: 0.5s;
 }
@@ -74,7 +84,14 @@ ul{
     #menu-list{
         left:20px;
         padding-bottom: 10px;
-        border-bottom: 1px solid snow;
+        border-bottom: 1px solid var(--main-light);
+    }
+    .menu-item:hover{
+        color: var(--light-accent);
+    }
+    
+    .menu-item i:hover{
+        color: var(--light-accent);
     }
 }
 
@@ -82,11 +99,17 @@ ul{
 
 #slogan{
     text-align: center;
-    margin-top: 35vh;
+    margin-top: 30vh;
+    font-size: larger;
+}
+
+#slogan h1{
+    letter-spacing: 2px;
+    padding-bottom: 1rem;
 }
 
 .tech-stack{
-    margin-top:20px;
+    margin-top:40px;
     text-align: center;
     font-size: large;
     animation: fadeIn 3s forwards;
@@ -96,19 +119,25 @@ ul{
     -ms-animation: fadeIn 3s;
 }
 
-.tech-list-server,.tech-list-backend,.tech-list-frontend {
+.tech-stack ul{
+    padding-bottom: 10px;
+    font-size: normal;
+}
+
+.tech-list-server,.tech-list-backend,.tech-list-frontend,.tech-list-other {
     display: inline-block;
     margin-right: 10px;
     position: relative;
 }
 
 i{
-    color:#88C0D0;
+    color:var(--light-accent);
 }
 
 @media only screen and (max-width: 600px) {
     #slogan{
-        margin-top: 10vh;
+        font-size: smaller;
+        margin-top: 20vh;
         margin-left: 10%;
         margin-right: 10%;
     }
@@ -159,7 +188,7 @@ i{
     top: 20vh;
     min-width: 100vw;
     text-align: center;
-    margin-bottom: 40vh;;
+    margin-bottom: 40vh;
 }
 
 .project-overview{
@@ -167,17 +196,15 @@ i{
     background: none;
     margin-left:15%;
     margin-right:15%;
-    min-height: 100%;
 }
 
 .project-details{
     position: fixed;
     left: 20%;
     right: 20%;
-    border:1px solid rgba(255,255,255,0.5);
+    border:2px solid var(--light-accent);
     border-radius: 5px;
-    padding: 10px;
-    padding-bottom: 30px;
+    padding: 2rem;
 }
 
 .project-list-item{
@@ -186,16 +213,16 @@ i{
     display: inline-block;
     margin-right: 30px;
     font-size: large;
-    color: #88C0D0;
+    color: var(--light-accent);
 }
 
 .project-list-item:hover{
-    color: #D08770;
+    color: var(--bright-accent);
     transition: 0.5s;
 }
 
 .active-project-index{
-    color: #D08770;
+    color: var(--bright-accent);
     font-size: xx-large;
     animation: bounce-in 1s;
 }
@@ -207,6 +234,7 @@ i{
 
 #project-tech-list{
     margin-top: 2vh;
+    padding-bottom: 2rem;
 }
 
 #project-url{
@@ -224,16 +252,15 @@ i{
     .projects{
         top:10vh;
         position: relative;
+        padding-bottom: 10vh;
     }
     
     .project-details{
-        position: relative;
-        left: 5%;
-        right: 5%;
-        border:1px solid rgba(255,255,255,0.5);
+        position: absolute;
+        border:2px solid rgba(255,255,255,0.5);
         border-radius: 5px;
         padding: 10px;
-        padding-bottom: 10vh;
+        padding-bottom: 5vh;
     }
 }
 
