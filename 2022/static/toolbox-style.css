@@ -1,0 +1,102 @@
+button{
+    margin-top: 10px;
+    border: 1px solid var(--text-color);
+    border-radius: 10px;
+    padding: 20px;
+    font-weight: bold;
+    font-size: large;
+}
+
+button:hover{
+    color: var(--text-color)!important;
+    border: 2px solid var(--text-color)!important;
+    background-color: var(--background)!important;
+    padding: 40px!important;
+    transition: 500ms;   
+    box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.3);
+}
+
+button:hover i{
+    color:var(--text-color)!important;
+}
+
+#laravel-btn, #db-btn{
+    background-color: var(--blue-accent);
+    color: var(--background);
+    margin-left: 120px;
+}
+
+#laravel-btn i{
+    color: var(--background);
+}
+
+#vue-btn{
+    background-color: var(--green-accent);
+    color: var(--background);
+    margin-left: 60px;
+}
+
+#vue-btn i{
+    color: var(--background);
+}
+
+#php-btn{
+    background-color: var(--red-accent);
+    color: var(--background);
+    margin-left: 0px;
+}
+
+#php-btn i{
+    color: var(--red-background);
+}
+
+#javascript-btn{
+    background-color: var(--accent);
+    color: var(--background);
+    margin-left: 60px;
+}
+
+#javascript-btn i{
+    color: var(--background);
+}
+
+#go-btn{
+    background-color: var(--pink-accent);
+    color: var(--background);
+    margin-left: 60px;
+}
+
+#go-btn i{
+    color: var(--pink-background);
+}
+
+#docker-btn{
+    background-color: var(--text-color);
+    color: var(--background);
+    margin-left: 60px;
+}
+
+#docker-btn i{
+    color: var(--background);
+}
+
+#linux-btn{
+    width: 180px;
+    background-color: var(--accent);
+    color: var(--background);
+    margin-left: 120px;
+}
+
+#linux-btn i{
+    color: var(--background);
+}
+
+#gcp-btn{
+    background-color: var(--background);
+    color: var(--text-color);
+    margin-left: 20px;
+}
+
+#gcp-btn i{
+    color: var(--text-color);
+}

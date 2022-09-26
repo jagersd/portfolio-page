@@ -4,6 +4,8 @@
     --accent: #D08770;
     --blue-accent: #81A1C1;
     --green-accent: #8FBCBB;
+    --pink-accent:#B48EAD;
+    --red-accent:#BF616A;
     --text-color: #D8DEE9;
 }
 
@@ -17,7 +19,6 @@
     color: var(--light);
     scroll-behavior: smooth;
 }
-
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -51,6 +52,7 @@ body{
     color: var(--light);
     border: 2px solid var(--accent);
     background-color: var(--background);
+    box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.3);
     transition: 500ms;
 }
 
@@ -74,28 +76,43 @@ b{
     height: 50vh;
 }
 
+.load-line{
+    width: 0%;
+    animation: lineDraw ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
 /* MENU ELEMENTS */
 
 .top-header{
     width: 100%;
     height: 60px;
-    text-align: right;
+    transition: all 1s;
     position: fixed;
-    box-shadow: 0px 8px 7px 0px rgba(0,0,0,0.2);
+    /* box-shadow: 0px 8px 7px 0px rgba(0,0,0,0.2); */
 }
 
 .top-header ul{
     margin-right: 2vw;
+    white-space: nowrap;
 }
 
 .top-header ul > li{
     margin-top: 20px;
     padding-left: 5px;
     display: inline-block;
+    animation: waveOut linear 3s;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
 }
 
 .left-sticky{
-    margin-top: 65vh;
+    margin-top: 100vh;
+    animation: leftSticky ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 500ms;
     width: 20px;
     position: fixed;
 }
@@ -113,12 +130,37 @@ b{
     height: 100vh;
     background-color: var(--text-color);
 }
+#hide-when-scrolled{
+    opacity: 0;
+}
 
-.center-section{
+.intro-section{
+    opacity: 0;
     padding-top: 20vh;
     width: 40%;
     margin-right:auto;
     margin-left:auto;
+    animation: fadeIn ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.center-wrapper{
+    display: grid;
+    place-items: center;
+}
+
+.center-element{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.pop-in{
+    filter: blur(0);
+    opacity: 1;
+    transform: translateX(0);
 }
 
 /* INDIVIDUAL SECTION */
@@ -127,18 +169,121 @@ b{
     text-align: center;
 }
 #intro-content{
+    opacity: 0;
     text-align: left;
     color: var(--text-color);
+    animation: fadeIn ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
 }
 #intro-content ul{
     list-style-type: circle;
     font-size: smaller;
+    padding-left: 50px;
 }
 #intro-link{
     text-align: right;
 }
+#intro-toolbox-btn{
+    opacity: 0;
+    animation: fadeIn ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
 
-
+#about{
+    width: 60%;
+}
 #about-content{
     padding-left: 30px;
+}
+
+#toolbox-tool-list{
+    list-style: none;
+}
+.toolbox-grid-buttons{
+    padding-bottom: 40px;
+}
+#toolbox-tool-list ul > li{
+    list-style: none;
+    display: inline-block;
+}
+
+.project p,.project h3{
+    color: var(--background);
+}
+
+.project-tools-list{
+    list-style: none;
+    font-style: italic;
+}
+
+.project-tools-list li{
+    color: var(--background);
+}
+#nog-wat-app{
+    padding: 20px;
+    width:20vw;
+    border: 2px solid var(--text-color);
+    border-radius: 10px;
+    background-color: var(--blue-accent);
+    margin-left: 50px;
+    text-align: center;
+}
+#quiz-app{
+    padding: 20px;
+    width:40vw;
+    border: 2px solid var(--text-color);
+    border-radius: 10px;
+    background-color: var(--blue-accent);
+    margin-top: 30px;
+    margin-left: 0px;
+    text-align: center;
+}
+
+
+/* animations */
+  
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+@keyframes lineDraw {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+@keyframes leftSticky{
+    0%{
+        margin-top: 100vh;
+    }
+    100%{
+        margin-top: 65vh;
+    }
+}
+
+@keyframes waveOut{
+    0%{
+        margin-left: 100vw;
+    }
+    100%{
+        margin-left: 0vw;
+    }
+}
+
+@media(prefers-reduced-motion) {
+    .center-section{
+        transition: none;
+    }
 }

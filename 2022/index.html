@@ -8,39 +8,42 @@
     <link href="static/fontawesome/css/brands.min.css" rel="stylesheet">
     <link href="static/fontawesome/css/solid.min.css" rel="stylesheet">
     <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/toolbox-style.css">
     <title>Stefan de Jager's Portfolio page</title>
 </head>
 <body>
 
     <header class="top-header">
         <ul>
-            <li>1.About</li>
-            <li>2.Toolbox</li>
-            <li>3.Hobby Projects</li>
-            <li>4.Work Experience</li>
+            <li> *About</li>
+            <li> *Toolbox</li>
+            <li> *Hobby-Projects</li>
+            <li> *Work-Experience</li>
             <li><i class="fa-brands fa-github"></i></li>
             <li><i class="fa-brands fa-linkedin-in"></i></li>
         </ul>
+        <hr class="load-line">
     </header>
 
 
     <section class="left-sticky">
         <ul>
-            <li><i class="fa-solid fa-user"></i></li>
-            <li><i class="fa-solid fa-screwdriver-wrench"></i></li>
-            <li><i class="fa-solid fa-house-laptop"></i></li>
+            <li id="hide-when-scrolled"><a href="#"><i class="fa-solid fa-arrow-up-from-bracket"></i></a></li>
+            <li><a href="#about"><i class="fa-solid fa-user"></i></a></li>
+            <li><a href="#toolbox"><i class="fa-solid fa-screwdriver-wrench"></i></a></li>
+            <li><a href="#hobby-projects"><i class="fa-solid fa-house-laptop"></i></li>
             <li><i class="fa-solid fa-user-tie"></i></li>
-            <li><i class="fa-brands fa-github"></i></li>
-            <li><i class="fa-brands fa-linkedin-in"></i></li>
+            <li><a href="https://github.com/jagersd" target="about_blank"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/stefan-de-jager-1b1b8525/" target="about_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
             <li id="left-sticky-end"></li>
         </ul>
     </section>
 
-    <section class="center-section">
+    <section class="intro-section">
     <!-- intro section -->
         <div id="intro">
             <div id="intro-header">
-                <h1>Hej! I am <b>Stefan de Jager</b>,</h1>
+                <h1>Hei! I am <b>Stefan de Jager</b>,</h1>
                 <h3>and tinker on the web.</h3>
             </div>
             <br>
@@ -60,12 +63,16 @@
             </div>
             <br>
             <div id="intro-link">
-                <a class="btn-link" href="#toolbox-content">Check out my toolbox!</a>
+                <a class="btn-link" id="intro-toolbox-btn" href="#toolbox-content">Check out my toolbox!</a>
             </div>
+            <hr class="load-line">
         </div>
-    <!-- about section -->
+    </section>
+    
+    <section class="center-wrapper">
         <div class="section-devider"></div>
-        <div id="about">
+        <!-- about section -->
+        <div class="center-element" id="about">
             <div id="about-header">
                 <h3><b>1.</b> About me</h3>
             </div>
@@ -75,28 +82,134 @@
             Each project on this website has been created for self-study goals and has not been the result of monitized assignments.</p>
 
             <p>As from January 2020 I have been lucky enough to land a spot at a software company which provides me with the opportunity to gain a lot of knowlegde by developing inhouse tools and contributing to server infrastructure maintainance. For obvious reasons, these will not appear in my personal <a href="https://github.com/jagersd" target="about_blank">github</a> repositories.</p>
-
+            
             <p>In the last year I have particularly enjoyed both consuming as well as setting up RESTful web API's allowing the end user with a smooth and simple experience. As well as getting to know my way around different ways of setting up server infrastructure on Linux.</p>
 
             <p>Because I have used a lot of open source tools and packages, it is only fair to invite you to use / copy whatever you can find in my projects and/or repo's.</p>
             </div>
         </div>
 
+        <!-- toolbox section -->
         <div class="section-devider"></div>
-        <div id="toolbox">
+
+        <div class="center-element" id="toolbox">
             <div id="toolbox-header">
                 <h3><b>2.</b> Toolbox</h3>
+                <br>
+                <p>This is a selection of tools I regularly work with. Click on each item for more details.</p>
+                <br>
             </div>
             <div id="toolbox-content">
-
+                <ul id="toolbox-tool-list">
+                    <li>
+                        <u>Frameworks</u>
+                        <ul class="toolbox-grid-buttons">
+                            <li>
+                                <button class="center-element" id="laravel-btn"> <i class="fa-brands fa-laravel"></i> Laravel</button>
+                            </li>
+                            <li>
+                                <button class="center-element" id="vue-btn"> <i class="fa-brands fa-vuejs"></i> Vue</button>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <u class="center-element">Programming languages</u>
+                        <ul class="toolbox-grid-buttons">
+                            <li>
+                                <button class="center-element" id="php-btn"> <i class="fa-brands fa-php"></i> PHP</button>
+                            </li>
+                            <li>
+                                <button class="center-element" id="javascript-btn"> <i class="fa-brands fa-square-js"></i> JavaScript</button>
+                            </li>
+                            <li>
+                                <button class="center-element" id="go-btn"> <i class="fa-brands fa-golang"></i> Go</button>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <u class="center-element">Misc</u>
+                        <ul class="toolbox-grid-buttons">
+                            <li>
+                                <button class="center-element" id="docker-btn"> <i class="fa-brands fa-docker"></i> Docker</button>
+                            </li>
+                            <li>
+                                <button class="center-element" id="db-btn"> <i class="fa-solid fa-database"></i> Databases</button>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <u class="center-element">Server</u>
+                        <ul class="toolbox-grid-buttons">
+                            <li>
+                                <button class="center-element" id="linux-btn"> <i class="fa-brands fa-ubuntu"></i> Linux</button>
+                            </li>
+                            <li>
+                                <button class="center-element" id="gcp-btn"> <i class="fa-solid fa-cloud"></i> Cloud Platforms</button>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
 
-        <div id="hobby-projects">
+    <!-- toolbox section -->
+        <div class="section-devider"></div>
+
+        <div class="center-element" id="hobby-projects">
+            <div id="hobby-projects-header">
+                <h3><b>3.</b> Hobby-projects</h3>
+                <p>This is a selection of projects I have worked on or are still actively enjoying myself with.</p>
+                <p>All these items are for educational purposes only.</p>
+                <br>
+            </div>
+
+            <div class="project">
+                <!--NogWat-->
+                <div class="center-element" id="nog-wat-app">
+                    <h3 class="title">NogWat App</h3>
+                    <p class="description">Mobile app through Ionic framework. Decoupled backend through Laravel API using Vue3 with Axios for the UI. Group/family grocery list and recipe sharing tool</p>
+                    <br>
+                    <hr style="width:50%;">
+                    <br>
+                    <ul class="project-tools-list">
+                        <li>PHP - Laravel</li>
+                        <li>JavaScript - Vue</li>
+                        <li>MySQL db</li>
+                        <li>Ionic Framework</li>
+                    </ul>
+                    <br>
+                    <hr style="width:50%;">
+                    <br>
+                    <a class="btn-link" href="#toolbox-content">Visit</a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <!--NogWat-->
+                <div class="center-element" id="quiz-app">
+                    <h3 class="title">Quiz</h3>
+                    <p class="description">A multiplayer quiz with a seperate hosting player in order to keep the social aspect alive. Used multiple times on parties and other occassions.</p>
+                    <br>
+                    <hr style="width:50%;">
+                    <br>
+                    <ul class="project-tools-list">
+                        <li>GO - Gin</li>
+                        <li>JavaScript</li>
+                        <li>Postgress through Cockroachdb</li>
+                        <li>Hosted on serverless container at Scaleway</li>
+                    </ul>
+                    <br>
+                    <hr style="width:50%;">
+                    <br>
+                    <a class="btn-link" href="#toolbox-content">Visit</a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
         </div>
 
+    <!-- toolbox section -->
+        <div class="section-devider"></div>
         <div id="work-experience">
         </div>
     </section>
+    <script src="static/main.js"></script>
 </body>
 </html>
