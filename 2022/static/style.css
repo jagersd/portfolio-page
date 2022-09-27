@@ -73,7 +73,7 @@ b{
 }
 
 .section-devider{
-    height: 50vh;
+    height: 60vh;
 }
 
 .load-line{
@@ -118,8 +118,8 @@ b{
 }
 
 .left-sticky li{
-    margin-top: 10px;
-    margin-left: 5px;
+    margin-top: 15px;
+    margin-left: 10px;
 }
 
 #left-sticky-end::after{
@@ -144,6 +144,12 @@ b{
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+#intro-icon{
+    opacity: 0;
+    margin-top: 30px;
+    font-size: 4rem;
+    transition: all 1s;
+}
 
 .center-wrapper{
     display: grid;
@@ -161,6 +167,41 @@ b{
     filter: blur(0);
     opacity: 1;
     transform: translateX(0);
+}
+
+/* MODAL */
+
+/* The Modal (background) */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.3);
+}
+.modal-content {
+    color: var(--background);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid var(--light);
+    border-radius: 10px;
+    width: 80%; 
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /* INDIVIDUAL SECTION */
@@ -223,13 +264,14 @@ b{
 .project-tools-list li{
     color: var(--background);
 }
-#nog-wat-app{
+#nog-wat-app, #solento{
     padding: 20px;
     width:20vw;
     border: 2px solid var(--text-color);
     border-radius: 10px;
     background-color: var(--blue-accent);
     margin-left: 50px;
+    margin-top: 20px;
     text-align: center;
 }
 #quiz-app{
@@ -253,6 +295,18 @@ b{
     100% {
         opacity: 1;
      }
+}
+
+@keyframes fadeInOut {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
 }
 
 @keyframes lineDraw {

@@ -28,13 +28,13 @@
 
     <section class="left-sticky">
         <ul>
-            <li id="hide-when-scrolled"><a href="#"><i class="fa-solid fa-arrow-up-from-bracket"></i></a></li>
-            <li><a href="#about"><i class="fa-solid fa-user"></i></a></li>
-            <li><a href="#toolbox"><i class="fa-solid fa-screwdriver-wrench"></i></a></li>
-            <li><a href="#hobby-projects"><i class="fa-solid fa-house-laptop"></i></li>
-            <li><i class="fa-solid fa-user-tie"></i></li>
-            <li><a href="https://github.com/jagersd" target="about_blank"><i class="fa-brands fa-github"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/stefan-de-jager-1b1b8525/" target="about_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li id="hide-when-scrolled"><a href="#"><i class="fa-solid fa-arrow-up-from-bracket fa-xl"></i></a></li>
+            <li><a href="#about"><i id="iabout" class="fa-solid fa-user fa-xl"></i></a></li>
+            <li><a href="#toolbox"><i id="itoolbox" class="fa-solid fa-screwdriver-wrench fa-xl"></i></a></li>
+            <li><a href="#hobby-projects"><i id="ihobby-projects" class="fa-solid fa-house-laptop fa-xl"></i></li>
+            <li><a href="#work-experience"><i id="iwork-experience" class="fa-solid fa-user-tie fa-xl"></i></a></li>
+            <li><a href="https://github.com/jagersd" target="about_blank"><i class="fa-brands fa-github fa-xl"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/stefan-de-jager-1b1b8525/" target="about_blank fa-xl"><i class="fa-brands fa-linkedin-in"></i></a></li>
             <li id="left-sticky-end"></li>
         </ul>
     </section>
@@ -63,9 +63,10 @@
             </div>
             <br>
             <div id="intro-link">
-                <a class="btn-link" id="intro-toolbox-btn" href="#toolbox-content">Check out my toolbox!</a>
+                <a class="btn-link" id="intro-toolbox-btn" href="#toolbox">Check out my toolbox!</a>
             </div>
             <hr class="load-line">
+            <div id="intro-icon-looper"><i id="intro-icon"></i></div>
         </div>
     </section>
     
@@ -180,8 +181,8 @@
                     <br>
                     <hr style="width:50%;">
                     <br>
-                    <a class="btn-link" href="#toolbox-content">Visit</a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a class="btn-link" href="https://web.nogwat-app.nl" target="about_blank">Visit</a>
+                    <a href="https://github.com/jagersd/nogwat" target="about_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
                 <!--NogWat-->
                 <div class="center-element" id="quiz-app">
@@ -193,23 +194,56 @@
                     <ul class="project-tools-list">
                         <li>GO - Gin</li>
                         <li>JavaScript</li>
-                        <li>Postgress through Cockroachdb</li>
+                        <li>PostgreSQL through Cockroachdb</li>
                         <li>Hosted on serverless container at Scaleway</li>
                     </ul>
                     <br>
                     <hr style="width:50%;">
                     <br>
-                    <a class="btn-link" href="#toolbox-content">Visit</a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a class="btn-link" href="https://quiz2mlvqhq9z-quiz2.functions.fnc.nl-ams.scw.cloud" target="about_blank">Visit</a>
+                    <a href="https://github.com/jagersd/quiz2" target="about_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <!--NogWat-->
+                <div class="center-element" id="solento">
+                    <h3 class="title">Solento</h3>
+                    <p class="description">Getting to know the Laravel framework and all that comes with it through the creation of browser based multiplayer strategy/tradingcard game.</p>
+                    <br>
+                    <hr style="width:50%;">
+                    <br>
+                    <ul class="project-tools-list">
+                        <li>PHP - Laravel</li>
+                        <li>JavaScript and Blade templating</li>
+                        <li>Mysql</li>
+                    </ul>
+                    <br>
+                    <hr style="width:50%;">
+                    <br>
+                    <a class="btn-link" href="https://project-solento.stefandejager.nl/" target="about_blank">Visit</a>
+                    <a href="https://github.com/jagersd/Solento" target="about_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
         </div>
 
-    <!-- toolbox section -->
+    <!-- work experience section -->
         <div class="section-devider"></div>
-        <div id="work-experience">
+        <div class="center-element" id="work-experience">
+            <div id="work-experience-header">
+                <h3><b>4.</b> Work experience</h3>
+                <p>TODO</p>
+                <br>
+            </div>
         </div>
+        <div class="section-devider"></div>
     </section>
+
+    <!-- modal template -->
+    <div id="tool-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>--------TODO----------</p>
+        </div>
+    </div>
+
     <script src="static/main.js"></script>
 </body>
 </html>
