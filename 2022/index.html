@@ -50,15 +50,15 @@
             <div id="intro-content">
                 <p>Thank you for visiting my portfolio page!</p>
                 <br>
-                <p>With a clear preference for infrastructure (either cloud based or owned metal) and backend logic or automation,
+                <p>With a clear preference for backend logic / automation and infrastructure (either own metal or cloud based),
                 I like diving into any subject in the digital world.</p>
                 <br>
                 <p>While working on any piece of tech, I always try to strick to the following principles:</p>
                 <ul>
                     <li>Focus on the end-user.</li>
-                    <li>It should be easy to understand and maintain.</li>
+                    <li>Code should be easy to understand and maintain.</li>
                     <li>Every element only has one job and needs to do it well.</li>
-                    <li>Making it, should be just as fun as using it.</li>
+                    <li>Making a product should be as fun as using it.</li>
                 </ul>
             </div>
             <br>
@@ -75,7 +75,7 @@
         <!-- about section -->
         <div class="center-element" id="about">
             <div id="about-header">
-                <h3><b>1.</b> About me</h3>
+                <h3><b>1.</b> About</h3>
             </div>
             <br>
             <div id="about-content">
@@ -106,10 +106,10 @@
                         <u>Frameworks</u>
                         <ul class="toolbox-grid-buttons">
                             <li>
-                                <button class="center-element" id="laravel-btn"> <i class="fa-brands fa-laravel"></i> Laravel</button>
+                                <button class="center-element toolbox-btn" id="laravel-btn"> <i class="fa-brands fa-laravel"></i> Laravel</button>
                             </li>
                             <li>
-                                <button class="center-element" id="vue-btn"> <i class="fa-brands fa-vuejs"></i> Vue</button>
+                                <button class="center-element toolbox-btn" id="vue-btn"> <i class="fa-brands fa-vuejs"></i> Vue</button>
                             </li>
                         </ul>
                     </li>
@@ -117,13 +117,13 @@
                         <u class="center-element">Programming languages</u>
                         <ul class="toolbox-grid-buttons">
                             <li>
-                                <button class="center-element" id="php-btn"> <i class="fa-brands fa-php"></i> PHP</button>
+                                <button class="center-element toolbox-btn" id="php-btn"> <i class="fa-brands fa-php"></i> PHP</button>
                             </li>
                             <li>
-                                <button class="center-element" id="javascript-btn"> <i class="fa-brands fa-square-js"></i> JavaScript</button>
+                                <button class="center-element toolbox-btn" id="javascript-btn"> <i class="fa-brands fa-square-js"></i> JavaScript</button>
                             </li>
                             <li>
-                                <button class="center-element" id="go-btn"> <i class="fa-brands fa-golang"></i> Go</button>
+                                <button class="center-element toolbox-btn" id="go-btn"> <i class="fa-brands fa-golang"></i> Go</button>
                             </li>
                         </ul>
                     </li>
@@ -131,10 +131,10 @@
                         <u class="center-element">Misc</u>
                         <ul class="toolbox-grid-buttons">
                             <li>
-                                <button class="center-element" id="docker-btn"> <i class="fa-brands fa-docker"></i> Docker</button>
+                                <button class="center-element toolbox-btn" id="docker-btn"> <i class="fa-brands fa-docker"></i> Docker</button>
                             </li>
                             <li>
-                                <button class="center-element" id="db-btn"> <i class="fa-solid fa-database"></i> Databases</button>
+                                <button class="center-element toolbox-btn" id="db-btn"> <i class="fa-solid fa-database"></i> Databases</button>
                             </li>
                         </ul>
                     </li>
@@ -142,14 +142,16 @@
                         <u class="center-element">Server</u>
                         <ul class="toolbox-grid-buttons">
                             <li>
-                                <button class="center-element" id="linux-btn"> <i class="fa-brands fa-ubuntu"></i> Linux</button>
+                                <button class="center-element toolbox-btn" id="linux-btn"> <i class="fa-brands fa-ubuntu"></i> Linux</button>
                             </li>
                             <li>
-                                <button class="center-element" id="gcp-btn"> <i class="fa-solid fa-cloud"></i> Cloud Platforms</button>
+                                <button class="center-element toolbox-btn" id="gcp-btn"> <i class="fa-solid fa-cloud"></i> Cloud Platforms</button>
                             </li>
                         </ul>
                     </li>
                 </ul>
+                <u>Other</u>
+                <p><small>[BASH,HTML,CSS,SQL]</small></p>
             </div>
         </div>
 
@@ -240,7 +242,8 @@
     <div id="tool-modal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <p>--------TODO----------</p>
+            <h2 id="modal-title"></h2>
+            <p id="modal-text">--------TODO----------</p>
         </div>
     </div>
 
