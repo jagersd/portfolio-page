@@ -21,7 +21,7 @@ button:hover i{
 }
 
 #laravel-btn, #db-btn{
-    background-color: var(--blue-accent);
+    background-color: var(--accent2);
     color: var(--background);
     margin-left: 120px;
 }
@@ -31,7 +31,7 @@ button:hover i{
 }
 
 #vue-btn{
-    background-color: var(--green-accent);
+    background-color: var(--accent3);
     color: var(--background);
     margin-left: 60px;
 }
@@ -41,17 +41,17 @@ button:hover i{
 }
 
 #php-btn{
-    background-color: var(--red-accent);
+    background-color: var(--accent4);
     color: var(--background);
     margin-left: 0px;
 }
 
 #php-btn i{
-    color: var(--red-background);
+    color: var(--background);
 }
 
 #javascript-btn{
-    background-color: var(--accent);
+    background-color: var(--accent1);
     color: var(--background);
     margin-left: 60px;
 }
@@ -61,13 +61,13 @@ button:hover i{
 }
 
 #go-btn{
-    background-color: var(--pink-accent);
+    background-color: var(--accent4);
     color: var(--background);
     margin-left: 60px;
 }
 
 #go-btn i{
-    color: var(--pink-background);
+    color: var(--background);
 }
 
 #docker-btn{
@@ -82,7 +82,7 @@ button:hover i{
 
 #linux-btn{
     width: 180px;
-    background-color: var(--accent);
+    background-color: var(--accent1);
     color: var(--background);
     margin-left: 120px;
 }

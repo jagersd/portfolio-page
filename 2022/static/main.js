@@ -98,9 +98,9 @@ const closeBtn = document.getElementsByClassName("close")[0];
 
 toolBtns.forEach((toolBtn)=>{
   toolBtn.onclick = () => {
+    changeModalContent(toolBtn.id);
     modal.style.display = "block";
     centerWrapper[0].style.filter = "blur(5px)";
-    changeModalContent(toolBtn.id);
   }
 })
 
