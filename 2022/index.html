@@ -7,6 +7,7 @@
     <link href="static/fontawesome/css/fontawesome.min.css" rel="stylesheet">
     <link href="static/fontawesome/css/brands.min.css" rel="stylesheet">
     <link href="static/fontawesome/css/solid.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="static/favicon.ico">
     <link rel="stylesheet" href="static/style.css">
     <link rel="stylesheet" href="static/toolbox-style.css">
     <title>Stefan de Jager's Portfolio page</title>
@@ -15,16 +16,15 @@
 
     <header class="top-header">
         <ul>
-            <li> *About</li>
-            <li> *Toolbox</li>
-            <li> *Hobby-Projects</li>
-            <li> *Work-Experience</li>
-            <li><i class="fa-brands fa-github"></i></li>
-            <li><i class="fa-brands fa-linkedin-in"></i></li>
+            <li><a href="#about">*About</a> </li>
+            <li><a href="#toolbox">*Toolbox</a> </li>
+            <li><a href="#hobby-projects">*Hobby-Projects</a> </li>
+            <li><a href="#work-experience">*Work-Experience</a> </li>
+            <li><a href="https://github.com/jagersd" target="about_blank"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/stefan-de-jager-1b1b8525" target="about_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
         </ul>
         <hr class="load-line">
     </header>
-
 
     <section class="left-sticky">
         <ul>
@@ -44,12 +44,12 @@
     <!-- intro section -->
         <div id="intro">
             <div id="intro-header">
-                <h1>Hei! I am <b>Stefan de Jager</b>,</h1>
-                <h3>and I like tinkering on the web.</h3>
+                <h1>Hei!! I am <b>Stefan de Jager</b>,</h1>
+                <h3>full stack web enthusiast.</h3>
             </div>
             <div id="intro-header-mobile">
-                <h1>Hei! I am <br><b>Stefan de Jager</b>,<br></h1>
-                <h3>and I like tinkering on the web.</h3>
+                <h1>Hei!! I am <br><b>Stefan de Jager</b>,<br></h1>
+                <h3>full stack web enthusiast.</h3>
             </div>
             <br>
             <div id="intro-content">
@@ -58,11 +58,14 @@
                 <p>With a clear preference for backend logic / automation and infrastructure (either own metal or cloud based),
                 I like diving into any subject in the digital world.</p>
                 <br>
-                <p>While working on any piece of tech, I always try to strick to the following principles:</p>
+                <p>While working on any piece of tech, I always try to strick to the following principles:
+                <img id="portfoliopic" src="static/portfolio.png" alt="">
+
+                </p>
                 <ul>
-                    <li>Focus on the end-user.</li>
+                    <li>Focus on the end-user expectations.</li>
                     <li>Code should be easy to understand and maintain.</li>
-                    <li>Every element only has one job and needs to do it well.</li>
+                    <li>Every element only has one task.</li>
                     <li>Making a product should be as fun as using it.</li>
                 </ul>
             </div>
@@ -159,7 +162,12 @@
                 <p><small>[BASH,HTML,CSS,SQL,GIT]</small></p>
                 <br>
                 <u>Other software I use regularly</u>
-                <p><small>[VSCode, VIM, Insomnia, Beekeeper]</small></p>
+                <p>[
+                  <a href="https://code.visualstudio.com/" target="about_blank">VSCode,</a>
+                  <a href="https://neovim.io/" target="about_blank">Neovim,</a>
+                  <a href="https://insomnia.rest/" target="about_blank">Insomnia,</a> 
+                  <a href="https://www.beekeeper.io/" target="about_blank">Beekeeper</a>
+                  ]</p>
             </div>
         </div>
 
@@ -178,7 +186,7 @@
                 <!--NogWat-->
                 <div class="center-element" id="nog-wat-app">
                     <h3 class="title">NogWat App</h3>
-                    <p class="description">Mobile app through Ionic framework. Decoupled backend through Laravel API using Vue3 with Axios for the UI. Group/family grocery list and recipe sharing tool</p>
+                    <p class="description">A mobile app on the Ionic platorm. Decoupled backend through Laravel API using Vue3 for the UI. Group/family grocery list and recipe sharing tool</p>
                     <br>
                     <hr style="width:50%;">
                     <br>
