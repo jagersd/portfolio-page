@@ -52,11 +52,11 @@ const iconList = [
   "fa-brands fa-laravel",
   "fa-brands fa-ubuntu",
   "fa-brands fa-gitlab",
-  "fa-brands fa-stack-overflow"
+  "fa-brands fa-git",
 ];
 
 const iconColors = [
-  "#ECEFF4","#D08770","#81A1C1","#8FBCBB","#BF616A","#B48EAD"
+  "#ECEFF4","#DEB992","#123259","#1BA098","#701E2A","#DA92A4"
 ]
 
 async function loopIcons(){

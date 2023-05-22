@@ -1,5 +1,4 @@
-
-:root{
+/* :root{
     --background: #2E3440;
     --light: #ECEFF4;
     --accent1: #D08770;
@@ -8,6 +7,19 @@
     --accent4:#B48EAD;
     --accent5:#BF616A;
     --text-color: #D8DEE9;
+}
+*/
+
+:root{
+    --background: #051622;
+    --light: #8296A4;
+    --white: #F7F7F7;
+    --accent1: #124259;
+    --accent2: #1BA098;
+    --accent3: #14D1A0;
+    --accent4: #DA92A4;
+    --accent5: #701E2A;
+    --text-color: #DEB992;
 }
 
 /* :root{
@@ -29,8 +41,12 @@
 *{
     padding: 0;
     margin: 0;
-    color: var(--light);
+    color: var(--text-color);
     scroll-behavior: smooth;
+}
+
+hr{
+    border-color:var(--light);
 }
 
 ::-webkit-scrollbar {
@@ -55,17 +71,17 @@ body{
     font-weight: bold;
     border: 2px solid var(--light);
     border-radius: 10px;
-    background-color: var(--accent2);
-    color: var(--background);
+    background-color: var(--accent1);
+    color: var(--white);
     padding: 15px;
     margin-top: 20px;
 }
 
 .btn-link:hover{
     color: var(--light);
-    border: 2px solid var(--accent);
+    border: 2px solid var(--accent1);
     background-color: var(--background);
-    box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.3);
+    box-shadow: 5px 10px 8px 0px rgba(255,255,255,0.3);
     transition: 500ms;
 }
 
@@ -185,7 +201,7 @@ b{
 #portfoliopic{
     float:right;
     max-height: 15vh;
-    border:5px solid var(--light);
+    border:5px solid var(--accent2);
     border-radius: 100px;
 }
 
@@ -297,6 +313,10 @@ b{
     padding-left: 30px;
 }
 
+#toolbox{
+    padding-left: 30vw;
+}
+
 #toolbox-tool-list{
     list-style: none;
 }
@@ -309,7 +329,7 @@ b{
 }
 
 .project p,.project h3{
-    color: var(--background);
+    color: var(--white);
 }
 .project-tools-list{
     list-style: none;
@@ -324,31 +344,32 @@ b{
 }
 
 .project-tools-list li{
-    color: var(--background);
+    color: var(--text-color);
 }
 #nog-wat-app, #solento{
-    padding: 20px;
+    padding: 50px;
     width:20vw;
     border: 2px solid var(--text-color);
     border-radius: 10px;
-    background-color: var(--accent2);
+    background-color: var(--accent1);
     margin-left: 50px;
     margin-top: 20px;
     text-align: center;
 }
 #quiz-app{
-    padding: 20px;
+    padding: 40px;
     width:40vw;
     border: 2px solid var(--text-color);
     border-radius: 10px;
-    background-color: var(--accent2);
+    background-color: var(--accent1);
     margin-top: 30px;
     margin-left: 0px;
     text-align: center;
 }
 
 #work-experience{
-    width: 80%;
+    padding-left: 90px;
+    width: 80vw;
 }
 
 @media only screen and (max-width: 600px) {
@@ -368,19 +389,13 @@ b{
         text-align: center;
     }
 
-    #about{
+    #about, #toolbox, #hobby-projects, #work-experience{
+        padding-left: 0;
         width: 80%;
     }
-
-    #toolbox{
-        width:80%;
-    }
-
-    #hobby-projects{
-        width: 80%;
-    }
+        
     #nog-wat-app,#quiz-app,#solento{
-        width: 80%;
+        width: 60%;
     }
 
 }
