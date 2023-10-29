@@ -201,7 +201,7 @@ b{
 #portfoliopic{
     float:right;
     max-height: 15vh;
-    border:5px solid var(--accent2);
+    border:5px solid var(--text-color);
     border-radius: 100px;
 }
 
@@ -296,8 +296,10 @@ b{
     padding-left: 50px;
 }
 #intro-link{
+    margin-top: 2rem;
     text-align: right;
 }
+
 #intro-toolbox-btn{
     opacity: 0;
     animation: fadeIn ease 3s;
@@ -372,6 +374,19 @@ b{
     width: 80vw;
 }
 
+#gopher{
+    position: absolute;
+    top: 110vh;
+    right: 10px;
+    height: auto;
+    width:3%;
+    opacity:0;
+    animation: fadeIn ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
 @media only screen and (max-width: 600px) {
 
     .intro-section{
@@ -396,6 +411,10 @@ b{
         
     #nog-wat-app,#quiz-app,#solento{
         width: 60%;
+    }
+
+    #gopher{
+        width: 10%;
     }
 
 }

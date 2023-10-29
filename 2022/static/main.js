@@ -1,7 +1,5 @@
 const sectionNames = ["about", "toolbox", "hobby-projects", "work-experience"];
 
-let currentSection = "";
-
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if(entry.isIntersecting){
@@ -20,7 +18,7 @@ const navbar = document.getElementsByClassName('top-header');
 const upArrow = document.getElementById('hide-when-scrolled');
 
 window.addEventListener("scroll", () => {
-  let current = window.pageYOffset; 
+  const current = window.pageYOffset; 
   if (current > 500) {
     navbar[0].style.opacity=0;
     upArrow.style.opacity=1;
@@ -33,9 +31,9 @@ window.addEventListener("scroll", () => {
 function indicatorAccent(sectionName){
   sectionNames.forEach((section)=>{
     if (sectionName == section){
-      document.getElementById("i"+section).style.color="#D08770";
+      document.getElementById("i"+section).style.color="#1BA098";
     } else {
-      document.getElementById("i"+section).style.color="#D8DEE9";
+      document.getElementById("i"+section).style.color="#8296A4";
     }
   })
 }
@@ -146,9 +144,9 @@ const toolBoxModalContent = {
   },
   "go-btn":{
     "title":"Go!",
-    "Content":`Go is my latest interesting and I'm having an absolute blast working with it.
-    The strictly type nature makes me spot mistakes a lot sooner than I would do with interpreted languages. Because it compiles down to a single binary file it make deployment in the cloud
-    very convenient. Because it has a very easy way to work with pointers it makes you think about lower level processes.
+    "Content":`Go is my latest interest and I'm having an absolute blast working with it.
+    I had to get used to a strictly typed language, but now I would not want anything else for a production application. Because it compiles down to a single binary file it make deployment in the cloud
+    very convenient. It is quiet easy to write and read, yet it allows for very fine grained control.
     That Go also has a great way to deal with concurrency is just a bonus to me.`
   },
   "docker-btn":{
@@ -174,3 +172,9 @@ const toolBoxModalContent = {
     This experience also made me want to experiment with my hobby projects, resulting in some items being hosted on <a href="https://www.scaleway.com/en/" target="about_blank">Scaleway</a>. Their serverless container service offering is awesome for these kinds of projects.`
   },
 }
+
+const gopher = document.getElementById("gopher")
+gopher.addEventListener("click", ()=>{
+    const r = randomInt(50, 500);
+    gopher.style.top=r+"%";
+})
