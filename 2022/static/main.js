@@ -134,8 +134,7 @@ const toolBoxModalContent = {
   "php-btn":{
     "title":"PHP",
     "Content":`This was the first programming language I got the chance to work with and I still think it is great for any type of web based project.
-    PHP makes it somewhat easy to write unmaintainable code, but with a little effort that is easily avoided. The added features of version 8 makes that even more convenient.
-    I have created a lot of one-off scripts in PHP which basically only server the purpose of database manipulation.`
+In a professional capacity I used it for a lot of one-off scripts and I have built some web applications with it. The latter mostly through Laravel.`
   },
   "javascript-btn":{
     "title":"JavaScript",
@@ -144,10 +143,24 @@ const toolBoxModalContent = {
   },
   "go-btn":{
     "title":"Go!",
-    "Content":`Go is my latest interest and I'm having an absolute blast working with it.
-    I had to get used to a strictly typed language, but now I would not want anything else for a production application. Because it compiles down to a single binary file it make deployment in the cloud
-    very convenient. It is quiet easy to write and read, yet it allows for very fine grained control.
-    That Go also has a great way to deal with concurrency is just a bonus to me.`
+    "Content":`Go has very rapidly become my 'go to' language for anything outside of the 'scripting' realm. It lets itself write as conveniently as interpreted languages but provides performance when needed. Why would I not want strict typing ever? And the fact that it easily allows for concurrent design is just a bonus to me.`
+  },
+  "bash-btn":{
+    "title":"Bash",
+    "Content":`The ever present assistant for scripting needs. I rarely use it for complex requirements or even as part of a piece of software. But for every one-off execution, this is my first consideration when selecting tooling.`
+  },
+  "tf-btn":{
+      "title":"Terraform",
+      "Content":`In professional working capacity I work with Terraform daily provishioning multiple layers or our infrastructure.
+          So when embarking on an adventure setting up a multicluster K3s homelab, it made most sense to be to start declaring everything through HCL as well.`
+  },
+  "ansible-btn":{
+    "title":"Ansible",
+    "Content": `When it comes to Ansible, I'm a novice. It is a very nice piece of tech and has already been used for a long time. I use it to send instructions to my multie node Homelab cluster running OpenSuse Leap. Every time I need something, Ill look up the documentation and attempt to fully understand it before setting it free on me setup.`
+  },
+  "k8s-btn":{
+    "title":"Kubernetes",
+    "Content":`Just like docker, this piece of tech changed the game. I use Kubernetes (managed by GCP) on a professional capacity and through the K3s distrobution for my personal infrastructure. After a few years of working with K8s, I still don't understand all of it, but every time I learn something new, the logic makes a lot of sense. It is essential to efficient scaling. `
   },
   "docker-btn":{
     "title":"Docker",
@@ -164,7 +177,7 @@ const toolBoxModalContent = {
     "title":"Linux",
     "Content":`Both for personal as professional use my OS of choice is Linux. For those with a bit of interest in what goes on 'under the hood' I am convinced
      that Linux a lot more pleasant to use than the alternatives. That it free (as in beer) and open source is very nice but would not chance this for me.
-     100% of my experience in this is in Debian based distrobutions.`
+     I have experience with the Debian based distrobutions as well as OpenSuse.`
   },
   "gcp-btn":{
     "title":"Cloud infra",

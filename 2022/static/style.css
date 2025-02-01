@@ -96,6 +96,11 @@ a:hover{
     transition: 500ms;
 }
 
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
 b{
     color: var(--accent2);
     font-size: larger;
@@ -348,7 +353,7 @@ b{
 .project-tools-list li{
     color: var(--text-color);
 }
-#nog-wat-app, #solento{
+#nog-wat-app, #homelab{
     padding: 50px;
     width:20vw;
     border: 2px solid var(--text-color);
@@ -358,7 +363,7 @@ b{
     margin-top: 20px;
     text-align: center;
 }
-#quiz-app{
+#quiz-app, #p1oneer{
     padding: 40px;
     width:40vw;
     border: 2px solid var(--text-color);

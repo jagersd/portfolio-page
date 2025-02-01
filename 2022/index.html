@@ -45,17 +45,17 @@
         <div id="intro">
             <div id="intro-header">
                 <h1>Hei!! I am <b>Stefan de Jager</b>,</h1>
-                <h3>full stack web enthusiast.</h3>
+                <h3>full stack tech enthusiast.</h3>
             </div>
             <div id="intro-header-mobile">
                 <h1>Hei!! I am <br><b>Stefan de Jager</b>,<br></h1>
-                <h3>full stack web enthusiast.</h3>
+                <h3>full stack tech enthusiast.</h3>
             </div>
             <br>
             <div id="intro-content">
                 <p>Thank you for visiting my portfolio page!</p>
                 <br>
-                <p>With a clear preference for backend logic / automation and infrastructure (either own metal or cloud based),
+                <p>With a clear preference for backend logic, process automation and (cloud) infrastructure,
                 I like diving into any subject in the digital world.</p>
                 <br>
                 <p>While working on any piece of tech, I always try to strick to the following principles:
@@ -64,8 +64,8 @@
                 </p>
                 <ul>
                     <li>Focus on the end-user expectations.</li>
-                    <li>Code should be easy to understand and maintain.</li>
-                    <li>Every element only has one task.</li>
+                    <li>If code is hard to write but easy to read you are probably solving a problem and doing it well.</li>
+                    <li>SOLID</li>
                     <li>Making a product should be as fun as using it.</li>
                 </ul>
             </div>
@@ -111,6 +111,35 @@
             <div id="toolbox-content">
                 <ul id="toolbox-tool-list">
                     <li>
+                        <u class="center-element">Programming languages</u>
+                        <ul class="toolbox-grid-buttons">
+                            <li>
+                                <button class="center-element toolbox-btn" id="go-btn"> <i class="fa-brands fa-golang"></i> Go</button>
+                            </li>
+                            <li>
+                                <button class="center-element toolbox-btn" id="bash-btn"> <i class="fa-solid fa-terminal"></i> Bash</button>
+                            </li>
+                            <li>
+                                <button class="center-element toolbox-btn" id="javascript-btn"> <i class="fa-brands fa-square-js"></i> JavaScript</button>
+                            </li>
+                            <li>
+                                <button class="center-element toolbox-btn" id="php-btn"> <i class="fa-brands fa-php"></i> PHP</button>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                    <li>
+                        <u class="center-element">IAC</u>
+                        <ul class ="toolbox-grid-buttons"
+                            <li>
+                                <button class="center-element toolbox-btn" id="tf-btn"> <i class="fa-solid fa-code-commit"></i> Terraform</button>
+                            </li>
+                            <li>
+                                <button class="center-element toolbox-btn" id="ansible-btn"> <i class="fa-solid fa-gears"></i> Ansible</button>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--<li>
                         <u>Frameworks</u>
                         <ul class="toolbox-grid-buttons">
                             <li>
@@ -120,24 +149,12 @@
                                 <button class="center-element toolbox-btn" id="vue-btn"> <i class="fa-brands fa-vuejs"></i> Vue</button>
                             </li>
                         </ul>
-                    </li>
-                    <li>
-                        <u class="center-element">Programming languages</u>
-                        <ul class="toolbox-grid-buttons">
-                            <li>
-                                <button class="center-element toolbox-btn" id="php-btn"> <i class="fa-brands fa-php"></i> PHP</button>
-                            </li>
-                            <li>
-                                <button class="center-element toolbox-btn" id="javascript-btn"> <i class="fa-brands fa-square-js"></i> JavaScript</button>
-                            </li>
-                            <li>
-                                <button class="center-element toolbox-btn" id="go-btn"> <i class="fa-brands fa-golang"></i> Go</button>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
+                        </li>-->
                         <u class="center-element">Misc</u>
                         <ul class="toolbox-grid-buttons">
+                            <li>
+                                <button class="center-element toolbox-btn" id="k8s-btn"> <i class="fa-solid fa-dharmacharkra"></i> Kubernetes</button>
+                            </li>
                             <li>
                                 <button class="center-element toolbox-btn" id="docker-btn"> <i class="fa-brands fa-docker"></i> Docker</button>
                             </li>
@@ -220,23 +237,40 @@
                     <a class="btn-link" href="https://quiz2mlvqhq9z-quiz2.functions.fnc.nl-ams.scw.cloud" target="about_blank">Visit</a>
                     <a href="https://github.com/jagersd/quiz3" target="about_blank"><i class="fa-brands fa-github fa-xl"></i></a>
                 </div>
-                <!--Solento-->
-                <div class="center-element" id="solento">
-                    <h3 class="title">Solento</h3>
-                    <p class="description">Getting to know the Laravel framework and all that comes with it through the creation of browser based multiplayer strategy/tradingcard game.</p>
+                <!--Homelab-->
+                <div class="center-element" id="homelab">
+                    <h3 class="title">Homelab</h3>
+                    <p class="description">In Q3 of 2024 I started getting into 'homelabbing' and now run a multinode k3s cluster on a number of HP T630 thin-clients</p>
                     <br>
                     <hr style="width:50%;">
                     <br>
                     <ul class="project-tools-list">
-                        <li>PHP - Laravel</li>
-                        <li>JavaScript and Blade templating</li>
-                        <li>Mysql</li>
+                        <li>Terraform</li>
+                        <li>Ansible</li>
+                        <li>Helm</li>
+                        <li>And everything else needed to run self-hosted service replacements.</li>
                     </ul>
                     <br>
                     <hr style="width:50%;">
                     <br>
-                    <a class="btn-link" href="https://solento.stefandejager.nl/" target="about_blank">Visit</a>
-                    <a href="https://github.com/jagersd/Solento" target="about_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+                    <i>Repo will be made public soon</i>
+                    <a class="disabled" href="https://github.com/jagersd/homelab" target="about_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+                </div>
+                <!--P1oneer-->
+                <div class="center-element" id="p1oneer">
+                    <h3 class="title">P1oneer</h3>
+                    <p class="description">This is a hackaton project where I attempted to discover what it takes to create an efficient process monitor specifically created for docker containers.</p>
+                    <br>
+                    <hr style="width:50%;">
+                    <br>
+                    <ul class="project-tools-list">
+                        <li>Go (standard library only)</li>
+                        <li>Docker</li>
+                    </ul>
+                    <br>
+                    <hr style="width:50%;">
+                    <br>
+                    <a href="https://github.com/jagersd/p1oneer" target="about_blank"><i class="fa-brands fa-github fa-xl"></i></a>
                 </div>
             </div>
         </div>
@@ -251,7 +285,7 @@
                 <p>After obtaining my bacholors degree in economics, I've worked in the Logistics industry.
                 The last 4 years of those as an IT project manager coordinating EDI integration between a set of large international companies.</p>
                 <p>During this time I found my passion for tech and decided that to learn as much as I wanted, it might be a good idea to look for a place at a company where tech is the core business.</p>
-                <p>Lucky for me, there was a great company looking for people and it is still the place where I work. Initially as software consultant but for the last couple of years as a software engineer</p>
+                <p>Luckily for me, there was a great company looking for people and it is still the place where I work. Initially as software consultant but for the last 5 years as a (cloud) infrastructure engineer.</p>
                 <br>
                 <hr class="load-line">
                 <br>
@@ -259,8 +293,8 @@
                 <p>As a member of the SysOps team and software engineer, I assist in maintaining the server clusters on which seperated parts of the product are hosted.</p>
                 <p>A 100% cloud based infrastructure has now been set up and is managed through Terraform. Together with a small team of developers we are not responsible for maintaining and imporving that as well as migrating the product to that infrastructure one client at a time.</p>
                 <br>
-                <h4 class="subheader"><i class="fa-solid fa-cubes"></i> micro-service development</h4>
-                <p>From time to time we decide to make our own tooling instead of committing to a third party SaaS tool or installing a ready made package.</p>
+                <h4 class="subheader"><i class="fa-solid fa-cubes"></i> software developemt</h4>
+                <p>From time to time we decide to make our own tooling instead of committing to a third party SaaS tool or installing a ready made package. Other times something needs to be build for specific temporary events.</p>
                 <p>To provide an example: I have had the opportunity to build a complete implementation platform granting consultants insight in the steps which need to be taken (and by whom to complete) in order to 
                 start using our product. It works by communicating with the API of our CRM package and leveraging the same authentication method as our product does.</p>
                 <br>
