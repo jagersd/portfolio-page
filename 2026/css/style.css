@@ -311,6 +311,7 @@ nav {
     opacity: 0;
     animation: fadeIn 1s ease forwards;
     animation-delay: 1.5s;
+    z-index: 10;
 }
 
 @keyframes fadeIn {
@@ -805,6 +806,10 @@ footer p {
 }
 
 @media (max-width: 768px) {
+    .cursor-dot,
+    .cursor-outline {
+        display: none;
+    }
     nav {
         padding: 1rem 2rem;
     }
