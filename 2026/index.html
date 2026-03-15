@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stefan de Jager - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <div class="progress-bar"></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <nav>
+        <div class="logo">&lt;Stefan /&gt;</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Toolbox</a></li>
+            <li><a href="#contact">Experience</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="floating-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-profile">
+                <img src="static/portfolio.png" alt="Stefan de Jager">
+            </div>
+            <p class="hero-subtitle">// full stack automation enthusiast</p>
+            <h1 class="hero-title">Hi, I'm <span>Stefan de Jager</span></h1>
+                <p class="hero-description">With a preference for backend logic, process automation and cloud infrastructure, I love diving into any subject in the digital world and am specialized in Kubernetes. <br> I focus on end-user expectations, clean code, and making products as fun to build as they are to use.</p>
+            <div class="cta-group">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#skills" class="btn btn-secondary">My Toolbox</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="section-header">
+            <span class="section-tag">// About Me</span>
+            <h2 class="section-title">My Journey</h2>
+        </div>
+        <div class="about-container">
+            <div class="about-item">
+                <div class="about-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                </div>
+                <h3>Started in 2018</h3>
+                <p>My hands-on journey with technology began during the winter of 2018 after having worked as IT project manager for 5 years. Every project on this site has been created for self-study goals, not monetized assignments.</p>
+            </div>
+            <div class="about-item">
+                <div class="about-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="2" y1="20" x2="22" y2="20"></line></svg>
+                </div>
+                <h3>Software Engineer</h3>
+                <p>Since 2020 I have been software engineer. Initially got to know Linux through working with the LAMP stack. Later on focus shifted to more cloud based solutions with Go and infrastructure configuration with Terraform/Tofu.</p>
+            </div>
+            <div class="about-item">
+                <div class="about-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+                </div>
+                <h3>Backend Focus</h3>
+                <p>I have a clear preference for backend logic, process automation, and cloud infrastructure. I believe code should be easy to read and solve real problems.</p>
+            </div>
+            <div class="about-item">
+                <div class="about-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="3" x2="6" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path></svg>
+                </div>
+                <h3>Open Source</h3>
+                <p>Thanks to many open source tools, I invite you to use and copy whatever you find on my github page. Sharing knowledge makes our community stronger.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-header">
+            <span class="section-tag">// Hobby Projects</span>
+            <h2 class="section-title">Personal Projects</h2>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-logo">
+                        <img src="icons/laravel.svg" alt="Laravel" title="Laravel">
+                        <img src="icons/vue.svg" alt="Vue" title="Vue">
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="project-tag">PHP - Laravel</span>
+                        <span class="project-tag">Vue 3</span>
+                        <span class="project-tag">MySQL</span>
+                        <span class="project-tag">Ionic</span>
+                    </div>
+                    <h3 class="project-title">NogWat App</h3>
+                    <p class="project-description">A mobile app on the Ionic platform. Decoupled backend through Laravel API using Vue3 for the UI. Group/family grocery list and recipe sharing tool.</p>
+                    <a href="https://web.nogwat-app.nl" target="_blank" class="project-link">Visit Site &rarr;</a>
+                    <a href="https://github.com/jagersd/nogwat" target="_blank" style="margin-left: 1rem; color: var(--grey1);" class="project-link">GitHub &rarr;</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-logo">
+                        <img src="icons/go.svg" alt="Go" title="Go">
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="project-tag">Go - Gin</span>
+                        <span class="project-tag">JavaScript</span>
+                        <span class="project-tag">PostgreSQL</span>
+                        <span class="project-tag">Scaleway</span>
+                    </div>
+                    <h3 class="project-title">Quiz</h3>
+                    <p class="project-description">A multiplayer quiz with a separate hosting player to keep the social aspect alive. Used multiple times at parties and other occasions.</p>
+                    <a href="https://quiz2mlvqhq9z-quiz2.functions.fnc.nl-ams.scw.cloud" target="_blank" class="project-link">Visit Site &rarr;</a>
+                    <a href="https://github.com/jagersd/quiz3" target="_blank" style="margin-left: 1rem; color: var(--grey1);" class="project-link">GitHub &rarr;</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-logo">
+                        <img src="icons/terraform.svg" alt="Terraform" title="Terraform">
+                        <img src="icons/kubernetes.svg" alt="Kubernetes" title="Kubernetes">
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="project-tag">Terraform</span>
+                        <span class="project-tag">Ansible</span>
+                        <span class="project-tag">Helm</span>
+                        <span class="project-tag">Talos</span>
+                    </div>
+                    <h3 class="project-title">Homelab</h3>
+                    <p class="project-description">In Q3 2024 I started homelabbing and now run a multinode k8s cluster on HP T630 thin-clients. Self-hosted service replacements with full IaC. Initially using k3s and have now moved to Talos Linux</p>
+                    <a href="https://github.com/jagersd/homelab" target="_blank" class="project-link">GitHub &rarr;</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-logo">
+                        <img src="icons/go.svg" alt="Go" title="Go">
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="project-tag">Go</span>
+                        <span class="project-tag">Docker</span>
+                        <span class="project-tag">stdlib only</span>
+                    </div>
+                    <h3 class="project-title">P1oneer</h3>
+                    <p class="project-description">A hackaton project attempting to create an efficient process monitor specifically for Docker containers. Built with Go standard library only.</p>
+                    <a href="https://github.com/jagersd/p1oneer" target="_blank" class="project-link">GitHub &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-header">
+            <span class="section-tag">// Toolbox</span>
+            <h2 class="section-title">Skills & Technologies</h2>
+        </div>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <div class="skill-tags">
+                    <button class="skill-btn" data-skill="go">Go</button>
+                    <button class="skill-btn" data-skill="bash">Bash</button>
+                    <button class="skill-btn" data-skill="javascript">JavaScript</button>
+                    <button class="skill-btn" data-skill="php">PHP</button>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Infrastructure (as Code)</h3>
+                <div class="skill-tags">
+                    <button class="skill-btn" data-skill="terraform">Terraform</button>
+                    <button class="skill-btn" data-skill="ansible">Ansible</button>
+                    <button class="skill-btn" data-skill="helm">Helm</button>
+                    <button class="skill-btn" data-skill="kubernetes">Kubernetes</button>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Containers & Cloud</h3>
+                <div class="skill-tags">
+                    <button class="skill-btn" data-skill="docker">Docker</button>
+                    <button class="skill-btn" data-skill="ubuntu">Ubuntu</button>
+                    <button class="skill-btn" data-skill="cloud">Cloud Platforms</button>
+                    <button class="skill-btn" data-skill="gcp">GCP</button>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Databases</h3>
+                <div class="skill-tags">
+                    <button class="skill-btn" data-skill="postgresql">PostgreSQL</button>
+                    <button class="skill-btn" data-skill="mysql">MySQL</button>
+                    <button class="skill-btn" data-skill="cockroachdb">CockroachDB</button>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Coding tools</h3>
+                <div class="skill-tags">
+                    <button class="skill-btn" data-skill="neovim">Neovim</button>
+                    <button class="skill-btn" data-skill="linux">Linux</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skill Modal -->
+    <div id="skill-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-text"></p>
+        </div>
+    </div>
+
+    <section id="contact">
+        <div class="section-header">
+            <span class="section-tag">// Work Experience</span>
+        </div>
+        <div class="contact-content">
+            <p class="contact-text">From 2015 onwards I have worked in the field of automation. Initially as a project manager for EDI projects in the field of airfreight logistics. There I learned that the field of automation was one I wanted to dive deeper into.</p>
+                <p class="contact-text">In 2019 I got the opportunity to join a small sysops team running bear metal Ubuntu. I am extremely grateful for the CTO at that company as he showed me the roped and got me into Linux, programming and laying out clearly what really matters: technology is the means to an end, not the goal in itself.<br>
+                    I got to participate in the move to the cloud. Initially docker because we where going to adopt kubernetes. Later on Terraform and how to manage services provided by mainly GCP. This has been a very educational journey and I firmly got to grips with kubernetes.
+                </p>
+            <p class="contact-text">As from 2024 focus shifted firmly to kubernetes. Particularly through the use of Talos Linux. I got to participate and architect a platform where kubernetes was hosted for other companies. Through this I also became more familiar with the services which makes you more Cloud agnostic. CD through ArgoCD, Secret management with Openbao, image registries in Harbor and so on.</p>
+            <p class="contact-text">Currently I still work as kubernetes engineer contribute to building platforms for companies on multiple cloud providers. This mainly by combining what makes kubernetes a great piece of infrastructure with a dusting of cloud provider conviences</p>
+            <div class="social-links">
+                <a href="https://github.com/jagersd" target="_blank" class="social-link" title="GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/stefan-de-jager-1b1b8525/" target="_blank" class="social-link" title="LinkedIn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Stefan de Jager. Built with passion and open source tools.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
