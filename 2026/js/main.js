@@ -57,7 +57,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-document.querySelectorAll('.about-item, .project-card, .skill-btn, .stat-item').forEach(el => {
+document.querySelectorAll('.about-item, .project-card, .skill-btn, .stat-item, .timeline-item').forEach(el => {
     observer.observe(el);
 });
 
@@ -85,7 +85,7 @@ shapes.forEach((shape, i) => {
 const skillContent = {
     go: {
         title: "Go",
-        text: "Go has very rapidly become my 'go to' language for anything outside of the 'scripting' realm. It has become the lingua franca of cloud native development. Strictly typed, performant and portable. I enjoy writing solutions with golang a lot."
+        text: "Go has very rapidly become my 'go to' language for anything outside of the 'scripting' realm. It has become the lingua franca of cloud native development. Strictly typed, performant and portable. I enjoy writing solutions with Go a lot."
     },
     bash: {
         title: "Bash",
@@ -93,7 +93,7 @@ const skillContent = {
     },
     javascript: {
         title: "JavaScript",
-        text: "When working on the web, you don't want to avoid learning JavaScript. Although I have not yet gotten into Node (or Bun) that much, I write things in Vanilla JavaScript regularly for the frontend (like this page) or through Vue. It is something I'd like to dive into a little deeper since it is basically used everywhere nowadays."
+        text: "When working on the web, you want to learn JavaScript. Although I have not yet gotten into Node (or Bun) that much, I write things in Vanilla JavaScript regularly for the frontend (like this page) or through Vue. It is something I'd like to dive into a little deeper since it is basically used everywhere nowadays."
     },
     php: {
         title: "PHP",
