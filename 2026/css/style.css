@@ -810,6 +810,22 @@ footer p {
     .cursor-outline {
         display: none;
     }
+    .scroll-indicator {
+        display: flex;
+        flex-direction: row;
+        left: 1.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        bottom: auto;
+    }
+    .scroll-indicator span {
+        display: none;
+    }
+    .scroll-line {
+        height: 30px;
+        width: 2px;
+        background: linear-gradient(to bottom, var(--green), transparent);
+    }
     nav {
         padding: 1rem 2rem;
     }
