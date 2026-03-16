@@ -416,8 +416,8 @@ section {
 
 .about-item p {
     color: var(--grey1);
-    font-size: 0.9rem;
-    line-height: 1.6;
+    font-size: 1.1rem;
+    line-height: 1.7;
 }
 
 #projects {
@@ -532,7 +532,7 @@ section {
 .project-description {
     color: var(--grey1);
     margin-bottom: 1.5rem;
-    font-size: 0.95rem;
+    font-size: 1.1rem;
 }
 
 .project-link {
@@ -559,7 +559,13 @@ section {
 }
 
 .skill-category {
-    margin-bottom: 3rem;
+    margin-bottom: 1.25rem;
+}
+
+.skill-category h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--fg);
 }
 
 .skill-category:nth-child(1) .skill-btn {
@@ -587,6 +593,18 @@ section {
     border-color: var(--orange);
 }
 
+.skill-category:nth-child(6) .skill-btn {
+    background: rgba(122, 132, 120, 0.15);
+    border-color: var(--grey0);
+}
+
+.skill-category:nth-child(6) .skill-btn:hover,
+.skill-category:nth-child(6) .skill-btn:focus {
+    background: var(--grey0);
+    color: var(--bg-dim);
+    transform: translateY(-5px);
+}
+
 .skill-category h3 {
     font-size: 1.25rem;
     margin-bottom: 1.5rem;
@@ -610,6 +628,8 @@ section {
     transition: all 0.3s ease;
     opacity: 0;
     transform: translateY(20px);
+    text-decoration: none;
+    display: inline-block;
 }
 
 .skill-btn.visible {
@@ -715,7 +735,19 @@ section {
 #modal-text {
     color: var(--grey1);
     line-height: 1.8;
-    font-size: 1rem;
+    font-size: 1.15rem;
+}
+
+#modal-text a {
+    color: var(--green);
+    text-decoration: none;
+    border-bottom: 1px solid var(--green);
+    transition: all 0.3s ease;
+}
+
+#modal-text a:hover {
+    color: var(--aqua);
+    border-color: var(--aqua);
 }
 
 #contact {
@@ -757,7 +789,7 @@ section {
 
 .timeline-item p {
     color: var(--grey1);
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     line-height: 1.8;
 }
 
@@ -802,7 +834,7 @@ footer {
 
 footer p {
     color: var(--grey0);
-    font-size: 0.9rem;
+    font-size: 1.1rem;
 }
 
 @media (max-width: 768px) {

@@ -129,7 +129,7 @@ const skillContent = {
     },
     linux: {
         title: "Linux",
-        text: "Both for personal as professional use my OS of choice is Linux. For those with a bit of interest in what goes on 'under the hood' I am convinced that Linux is a lot more pleasant to use than the alternatives. That it is free (as in beer) and open source is very nice but would not change this for me. I have experience with the Debian based distributions as well as OpenSuse."
+        text: "Both for personal as professional use my OS of choice is Linux. For those with a bit of interest in what goes on 'under the hood' I am convinced that Linux is a lot more pleasant to use than the alternatives. That it is free (as in beer) and open source is very nice but would not change this for me. I have experience with the Debian based distributions as well as OpenSuse. The latter I have a preference for but the first one just seems to be more frequently used professionally. Somehow Rhel has yet avoided me."
     },
     cloud: {
         title: "Cloud Platforms",
@@ -137,11 +137,11 @@ const skillContent = {
     },
     gcp: {
         title: "Google Cloud Platform",
-        text: "I work with GCP professionally, managing cloud infrastructure and deploying applications. I have experience with Compute Engine, Cloud Run, GKE, and various other GCP services."
+        text: "Of all the larger cloud provided I worked with GCP the most. Managing cloud infrastructure and deploying applications on GKE. I also have experience with Compute Engine, Cloud Run, GKE, and various other GCP services."
     },
     postgresql: {
         title: "PostgreSQL",
-        text: "My go-to relational database. I have experience with advanced PostgreSQL features including JSON types, window functions, and performance optimization."
+        text: "My go-to relational database since the conception of the CloudNativePG project. I have experience with advanced PostgreSQL features including JSON types, window functions, and performance optimization."
     },
     mysql: {
         title: "MySQL",
@@ -149,7 +149,7 @@ const skillContent = {
     },
     cockroachdb: {
         title: "CockroachDB",
-        text: "Experimented with CockroachDB as a distributed SQL solution. I appreciate its ability to provide strong consistency across geographic regions."
+        text: "Experimented with CockroachDB as a distributed SQL solution. I appreciate its ability to provide strong consistency across geographic regions and its free tier for testing and personal hobby projects."
     },
     neovim: {
         title: "Neovim",
@@ -161,11 +161,23 @@ const skillContent = {
     },
     ubuntu: {
         title: "Ubuntu",
-        text: "In 2020 I got the opportunity to contribute to bear metal server management for a large saas application. All service where clustered over multiple machines. They had one thing in common: It runs Ubuntu."
+        text: "In 2020 I got the opportunity to contribute to bear metal server management for a large saas application. All service where clustered over multiple machines. They had one thing in common: It runs Ubuntu. However, on my personal hardware (both desktop and server) I run varieties OpenSuse."
     },
     git: {
         title: "Git",
         text: "Essential for any modern development workflow. I'm comfortable with branching strategies, merge conflicts, and collaborative workflows using GitHub."
+    },
+    argocd:{
+        title: "ArgoCD",
+        text: "I use ArgoCD for continuous deployment in Kubernetes environments. It allows me to manage application deployments declaratively and ensures that the desired state is maintained. Recently I created <a href='https://gist.github.com/jagersd/12cfc8e478248cba78ed12fc9fc49d5f' target='_blank' rel='noopener noreferrer'> this </a> bash script in order to setup a local sandbox through using Kind, Cilium, Gitea and ArgoCD for educational or testing purposes. Feel free to use it if this sounds helpfull to you.",
+    },
+    gitlabci: {
+        title: "GitLab-ci",
+        text: "Allthough I recently work more often with github Actions, I've got more experience with gitlab's CI capabilities. I have set up pipelines for building, testing, and deploying applications in GitLab CI/CD."
+    },
+    githubactions: {
+        title: "GitHub Actions",
+        text: "Currenly Im trying to get more familiar with github actions because this seems to be more frequently used by organization served by the company I work for."
     }
 };
 
@@ -180,7 +192,7 @@ document.querySelectorAll('.skill-btn').forEach(btn => {
         const skill = btn.dataset.skill;
         if (skillContent[skill]) {
             modalTitle.textContent = skillContent[skill].title;
-            modalText.textContent = skillContent[skill].text;
+            modalText.innerHTML = skillContent[skill].text;
             modal.classList.add('active');
         }
     });
